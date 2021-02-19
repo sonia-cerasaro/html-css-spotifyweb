@@ -12,6 +12,9 @@ nav {
 
 }
 
+/* SE DO POSITION FIXED AL NAV IL FOOTER SPARISCE */
+/* (DOPO AVER DATO 100VH AL MAIN) */
+
 .button_upgrade {
   width: 200px;
   height:100%;
@@ -86,25 +89,17 @@ div.container_movies {
 
 div.row {
   display: flex;
-  justify-content:  space-around;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .movie {
-  width: 200px;
+  width: calc(100% / 8);
   height: 170px;
   background-color: lightblue;
   border: black solid 1px;
-  margin-right: auto;
-
 }
-
-/* .movie.last {
-  margin: auto;
-} */
-
 
 /* FOOTER */
 
