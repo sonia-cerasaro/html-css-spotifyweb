@@ -6,8 +6,10 @@
 
 /* NAV */
 nav {
+  width: 100vw;
   height: 80px;
   background-color: blue;
+
 }
 
 .button_upgrade {
@@ -20,17 +22,16 @@ nav {
 
 
 /* ASIDE */
+
 aside {
   width: 250px;
   height: calc( 100vh - 100px);
-  border: red solid 2px;
   background-color: lightgreen;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
-
 }
 
 div.nav_aside_cont {
@@ -40,12 +41,41 @@ div.nav_aside_cont {
   border: black solid 2px;
 }
 
+.nav_aside_cont.john {
+  position: absolute;
+  bottom: 0;
+}
+
 /* MAIN */
 
 main {
   height: calc( 100vh - 90px - 90px);
   background-color: green;
 }
+
+/* MAIN FIRST SECTION */
+
+div.container_movies_nav_bar {
+  width: calc( 100% - 250px);
+  background-color: purple;
+  float: right;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lista_main {
+  width: 150px;
+  height: 50px;
+  background-color: orange;
+  border: black solid 2px;
+  margin-top: 12px;
+  margin-right: 15px;
+}
+
+/* MAIN SECOND SECTION */
 
 div.container_movies {
   width: calc( 100% - 250px);
@@ -54,24 +84,21 @@ div.container_movies {
   float: right;
 }
 
-div.container_movies_nav_bar {
-  width: calc( 100% - 250px);
-  height: 10%;
-  background-color: purple;
-  float: right;
-  border: black solid 2px;
+div.row {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+.movie {
+  width: 200px;
+  height: 170px;
+  background-color: lightblue;
+  border: black solid 1px;
 
-.lista_main {
-  width: 50px;
-  height: 50px;
-  background-color: yellow;
-  border: black solid 2px;
-  align-items: flex-start;
-  /* justify-content: center; */
 }
+
 
 /* FOOTER */
 
@@ -81,12 +108,34 @@ footer {
   background-color: blue;
   position: fixed;
   z-index: 2;
+  display: flex;
 }
 
 .controllers_container {
-  width: 30px;
+  margin-left: 10px;
+}
+
+.controllers_container.left {
+  width: 40%;
+  height: 100%;
+  margin-left: 0;
+  background-color: orange;
+  border: black solid 1px;
+  flex-grow: 0;
+}
+
+.controllers_container.center {
+  width: 100%;
   height: 100%;
   background-color: orange;
-  border: black solid 2px;
-  float: right;
+  border: black solid 1px;
+  flex-grow: 1;
+}
+
+.controllers_container.right {
+  width: 40%;
+  height: 100%;
+  background-color: orange;
+  border: black solid 1px;
+  flex-grow: 0;
 }
