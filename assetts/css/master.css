@@ -86,9 +86,10 @@ div.container_movies {
 
 div.row {
   display: flex;
-  justify-content: space-around;
+  justify-content:  space-around;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .movie {
@@ -96,8 +97,13 @@ div.row {
   height: 170px;
   background-color: lightblue;
   border: black solid 1px;
+  margin-right: auto;
 
 }
+
+/* .movie.last {
+  margin: auto;
+} */
 
 
 /* FOOTER */
