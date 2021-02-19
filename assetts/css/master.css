@@ -1,4 +1,92 @@
-.plo {
-  height: 50px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* NAV */
+nav {
+  height: 80px;
   background-color: blue;
+}
+
+.button_upgrade {
+  width: 200px;
+  height:100%;
+  background-color:orange;
+  float: right;
+  border: black solid 2px;
+}
+
+
+/* ASIDE */
+aside {
+  width: 250px;
+  height: calc( 100vh - 100px);
+  border: red solid 2px;
+  background-color: lightgreen;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+
+}
+
+div.nav_aside_cont {
+  width: 100%;
+  height: 70px;
+  background-color: orange;
+  border: black solid 2px;
+}
+
+/* MAIN */
+
+main {
+  height: calc( 100vh - 90px - 90px);
+  background-color: green;
+}
+
+div.container_movies {
+  width: calc( 100% - 250px);
+  height: 100%;
+  background-color: purple;
+  float: right;
+}
+
+div.container_movies_nav_bar {
+  width: calc( 100% - 250px);
+  height: 10%;
+  background-color: purple;
+  float: right;
+  border: black solid 2px;
+  display: flex;
+}
+
+
+.lista_main {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border: black solid 2px;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+/* FOOTER */
+
+footer {
+  width: 100vw;
+  height: 100px;
+  background-color: blue;
+  position: fixed;
+  z-index: 2;
+}
+
+.controllers_container {
+  width: 30px;
+  height: 100%;
+  background-color: orange;
+  border: black solid 2px;
+  float: right;
 }
