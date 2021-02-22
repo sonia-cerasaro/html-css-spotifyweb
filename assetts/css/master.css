@@ -5,68 +5,85 @@
 }
 
 /* NAV */
-nav {
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100vw - 250px);
+  height: 80px;
+  background-color: blue;
+}
+
+
+/* nav {
   width: 100vw;
   height: 80px;
   background-color: blue;
+} */
 
-}
-
-/* SE DO POSITION FIXED AL NAV IL FOOTER SPARISCE */
-/* (DOPO AVER DATO 100VH AL MAIN) */
 
 .button_upgrade {
   width: 200px;
-  height:100%;
+  height:80px;
   background-color:orange;
   float: right;
   border: black solid 2px;
 }
 
-
 /* ASIDE */
 
 aside {
   width: 250px;
-  height: calc( 100vh - 100px);
+  height: 100%;
   background-color: lightgreen;
-  position: fixed;
-  z-index: 1;
+  display: flex;
+  /* position: fixed;
+  z-index: 1; */
   top: 0;
   left: 0;
-  overflow-x: hidden;
+  flex-direction: column;
+
 }
 
-div.nav_aside_cont {
+div.aside_cont {
   width: 100%;
   height: 70px;
   background-color: orange;
   border: black solid 2px;
 }
 
-.nav_aside_cont.john {
+/* .nav_aside_cont.john {
   position: absolute;
   bottom: 0;
-}
+} */
 
 /* MAIN */
 
 main {
-  height: calc( 100vh - 90px - 90px);
+  height: calc( 100vh - 100px);
   background-color: green;
+  display: flex;
 }
 
-/* MAIN FIRST SECTION */
+.big_container_sections {
+  width: calc(100% - 250px);
+  padding-top: 80px;
+  overflow-y: auto;
+}
 
-div.container_movies_nav_bar {
-  width: calc( 100% - 250px);
+/* SELECT OPTIONS */
+
+div.container_select_options{
+  width: 100%;
+  height: 200px;
   background-color: purple;
-  float: right;
-  overflow: hidden;
+  float: left;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  overflow-y: hidden;
 }
 
 .lista_main {
@@ -78,37 +95,41 @@ div.container_movies_nav_bar {
   margin-right: 15px;
 }
 
-/* MAIN SECOND SECTION */
+/* SECTION MOVIE LIST */
 
-div.container_movies {
-  width: calc( 100% - 250px);
-  height: 100%;
-  background-color: purple;
-  float: right;
-}
+/* div.container_movies {
+  width: 100%;
+   height: 100%;
+  background-color: grey;
+
+} */
 
 div.row {
+  height: 200px;
+  background-color: purple;
+  margin: 10px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .movie {
-  width: calc(100% / 8);
+  width: calc(100% / 6);
   height: 170px;
   background-color: lightblue;
   border: black solid 1px;
+  /* margin-right: 5px; */
 }
 
 /* FOOTER */
 
 footer {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100px;
   background-color: blue;
-  position: fixed;
-  z-index: 2;
+  /* position: fixed; */
+
   display: flex;
 }
 
