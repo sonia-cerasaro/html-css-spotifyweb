@@ -12,23 +12,26 @@ header {
   right: 0;
   width: calc(100vw - 250px);
   height: 80px;
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-/* nav {
-  width: 100vw;
-  height: 80px;
-  background-color: blue;
-} */
-
+/* NAV */
 
 .button_upgrade {
-  width: 200px;
-  height:80px;
-  background-color:orange;
   float: right;
-  border: black solid 2px;
+  text-align: center;
+}
+
+button#upgrade {
+  width: 160px;
+  height: 30px;
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 10px;
+  color: #fff;
+  background-color: transparent;
+  border: #fff solid 1px;
 }
 
 /* ASIDE */
@@ -43,7 +46,6 @@ aside {
   top: 0;
   left: 0;
   flex-direction: column;
-
 }
 
 div.aside_cont {
@@ -62,7 +64,7 @@ div.aside_cont {
 
 main {
   height: calc( 100vh - 100px);
-  background-color: green;
+  background-color: #1c1c1c;
   display: flex;
 }
 
@@ -75,26 +77,33 @@ main {
 /* SELECT OPTIONS */
 
 div.container_select_options{
-  width: 100%;
-  height: 200px;
-  background-color: purple;
-  float: left;
+  width: 70%;
+  margin: auto;
+  background-color: #1c1c1c;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   overflow-y: hidden;
 }
 
 .lista_main {
-  width: 150px;
-  height: 50px;
-  background-color: orange;
-  border: black solid 2px;
-  margin-top: 12px;
-  margin-right: 15px;
+  color: #919496;
+  width: 100px;
+  height: 30px;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
 }
 
+.lime_line {
+  width: 30px;
+  border: lightgreen solid 2px;
+  border-radius: 2px;
+  margin-left: 36px;
+  margin-top: 2px;
+}
 /* SECTION MOVIE LIST */
 
 /* div.container_movies {
@@ -105,7 +114,6 @@ div.container_select_options{
 } */
 
 div.row {
-  height: 200px;
   background-color: purple;
   margin: 10px 0;
   display: flex;
@@ -115,11 +123,11 @@ div.row {
 }
 
 .movie {
-  width: calc(100% / 6);
+  width: calc(100% / 4 - 10px);
   height: 170px;
   background-color: lightblue;
   border: black solid 1px;
-  /* margin-right: 5px; */
+  margin: 5px;
 }
 
 /* FOOTER */
