@@ -39,7 +39,7 @@ button#upgrade {
 aside {
   width: 250px;
   height: 100%;
-  background-color: lightgreen;
+  background-color: #000;
   display: flex;
   /* position: fixed;
   z-index: 1; */
@@ -51,11 +51,63 @@ aside {
 div.aside_cont {
   width: 100%;
   height: 70px;
-  background-color: orange;
-  border: black solid 2px;
+  border: #fff solid 2px;
+  /* padding-left: 15px; */
+  font-size: 13px;
 }
 
-/* .nav_aside_cont.john {
+.aside_cont.logo {
+  height: 10%;
+}
+
+div.icons > i {
+  font-size: 25px;
+  padding-left: 17px;
+
+
+}
+
+#logo {
+  width: 150px;
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+.icons.home {
+  width: 100%;
+  height: calc(100% / 3);
+  border-left: lightgreen solid 2px;
+
+}
+
+.aside_cont.home {
+  height: 20%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+
+
+
+
+
+}
+
+/* .icons::before {
+  content: 'f015';
+} */
+
+.aside_cont.playlist {
+  height: 60%;
+}
+
+.aside_cont.john {
+  height: 10%;
+}
+
+/* .aside_cont.john {
   position: absolute;
   bottom: 0;
 } */
