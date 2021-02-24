@@ -231,12 +231,6 @@ div.container_select_options{
 }
 /* SECTION MOVIE LIST */
 
-/* div.container_movies {
-  width: 100%;
-   height: 100%;
-  background-color: grey;
-
-} */
 
 div.row {
   margin: 10px 0;
@@ -284,11 +278,19 @@ h1 {
   font-weight: bold;
 }
 
+.movies_img.last {
+  border-radius: 100px;
+}
+
+.movie_container.last:hover {
+  background: #000;
+  border-radius: 100px;
+}
+
 /* OVERLAY IMG */
 
 .movie_container:hover {
   background: #000;
-  border-radius: 5px;
 }
 
 .movie_container:hover img {
