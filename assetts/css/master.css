@@ -453,6 +453,14 @@ footer {
   .movie {
     width: calc(100% / 4 - 10px);
   }
+
+  .my_progress_container.bar_center {
+    width: 300px;
+  }
+
+
+
+
 }
 
 /* MEDIUM */
@@ -462,6 +470,11 @@ footer {
   .movie {
     width: calc(100% / 3 - 10px);
   }
+
+  .my_progress_container.bar_center {
+    width: 250px;
+  }
+
 }
 
 /* SMALL */
@@ -470,6 +483,10 @@ footer {
 
   header {
     width: calc(100vw - 70px);
+  }
+
+  .button_upgrade  {
+    margin-right: 10px;
   }
 
 /* MAIN */
@@ -500,7 +517,6 @@ footer {
   .aside_cont.home > .icons > i {
     margin-left: 5px;
   }
-
 
   span#arrow > i {
    padding-bottom: 15px;
@@ -535,6 +551,14 @@ footer {
   #jo_name {
     display: none;
   }
+
+  /* FOOTER */
+
+  .my_progress_container.bar_center {
+    width: 150px;
+  }
+
+
 
 
 
