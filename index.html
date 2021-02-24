@@ -3,8 +3,8 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotyfy Web</title>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
@@ -30,36 +30,43 @@
       <aside class="nav_aside">
 
         <div class="aside_cont logo">
-          <img id="logo" src="./assetts/img/Spotify_White.png" alt="logo spotify">
+          <span id="font_spotify">
+            <i class="fab fa-spotify"></i>
+          </span>
+
+          <span id="logo_spotify">
+              <img id="logo" src="./assetts/img/Spotify_White.png" alt="logo spotify">
+          </span>
         </div>
 
         <div class="aside_cont home">
 
           <div class="icons home">
             <i id="home" class="fas fa-home"></i>
-            Home
+            <span class="icone_aside">Home</span>
+
           </div>
 
           <div class="icons cerca">
             <i class="fas fa-search"></i>
-            Cerca
+            <span class="icone_aside cerca">Cerca</span>
           </div>
 
           <div class="icons nota">
             <i class="fab fa-itunes-note"></i>
-            La tua playlist
+            <span class="icone_aside tua_playlist">La tua playlist</span>
           </div>
 
         </div>
 
         <div class="aside_cont playlist">
           <div class="icons playlist title">
-            PLAYLIST
+            <span>PLAYLIST</span>
           </div>
 
-          <div class="icons playlist">
+          <div class="icons playlist crea">
             <i id="plus" class="fas fa-plus-square"></i>
-            Crea Playlist
+            <span>Crea Playlist</span>
           </div>
 
           <ul>
@@ -79,25 +86,32 @@
         <div class="aside_cont john">
 
           <div class="icons john">
-            <i id="arrow" class="fas fa-arrow-circle-down"></i>
-            Installa App
+            <span id="arrow">
+                <i class="fas fa-arrow-circle-down"></i>
+            </span>
+            <span id="install_app">
+                Installa App
+            </span>
           </div>
 
           <hr>
 
           <div class="icons playlist">
-            <i class="far fa-user-circle"></i>
-            John Doe
+            <span id="icona_jo">
+                <i class="far fa-user-circle"></i>
+            </span>
+            <span id="jo_name">
+                John Doe
+            </span>
           </div>
-
         </div>
       </aside>
 
       <div class="big_container_sections">
-
         <div class="container_select_options">
 
 <!-- LISTA MOVIES -->
+
           <div class="lista_main">
             <div>
               IN EVIDENZA
@@ -141,50 +155,16 @@
           </div>
 
 
-<!-- MOVIES WALL -->
+<!--FIRST MOVIES WALL -->
           <div class="row">
 
             <div class="movie">
               <div class="movie_container">
                 <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
+                </div>
               </div>
-
-              <div class="titolo">
-                Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
-              </div>
-              <div class="sottotilo">
-                Kyle Dixon & Michael Stein
-              </div>
-            </div>
-            <div class="movie">
-              <div class="movie_container">
-                <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
-              </div>
-
-              <div class="titolo">
-                Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
-              </div>
-              <div class="sottotilo">
-                Kyle Dixon & Michael Stein
-              </div>
-            </div>
-            <div class="movie">
-              <div class="movie_container">
-                <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
-              </div>
-
-              <div class="titolo">
-                Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
-              </div>
-              <div class="sottotilo">
-                Kyle Dixon & Michael Stein
-              </div>
-            </div>
-            <div class="movie">
-              <div class="movie_container">
-                <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
-              </div>
-
               <div class="titolo">
                 Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
               </div>
@@ -196,8 +176,10 @@
             <div class="movie">
               <div class="movie_container">
                 <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
+                </div>
               </div>
-
               <div class="titolo">
                 Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
               </div>
@@ -209,8 +191,55 @@
             <div class="movie">
               <div class="movie_container">
                 <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
+                </div>
               </div>
+              <div class="titolo">
+                Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
+              </div>
+              <div class="sottotilo">
+                Kyle Dixon & Michael Stein
+              </div>
+            </div>
 
+            <div class="movie">
+              <div class="movie_container">
+                <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="titolo">
+                Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
+              </div>
+              <div class="sottotilo">
+                Kyle Dixon & Michael Stein
+              </div>
+            </div>
+
+            <div class="movie">
+              <div class="movie_container">
+                <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="titolo">
+                Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
+              </div>
+              <div class="sottotilo">
+                Kyle Dixon & Michael Stein
+              </div>
+            </div>
+
+            <div class="movie">
+              <div class="movie_container">
+                <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
               <div class="titolo">
                 Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
               </div>
@@ -220,52 +249,86 @@
             </div>
           </div>
 
+<!-- SECOND MOVIE WALL -->
           <div class="title">
           <h1>Creato per John Doe </h1>
           <div class="sottotilo_jo">
             Piu' ascolti, piu' accurati sarannoi suggerimenti.
-
           </div>
           </div>
 
           <div class="row">
+
             <div class="movie">
               <div class="movie_container">
                 <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
+                </div>
               </div>
-
               <div class="titolo">
                 Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
               </div>
               <div class="sottotilo">
                 Kyle Dixon & Michael Stein
               </div>
-            </div>  <div class="movie">
-                <div class="movie_container">
-                  <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
-                </div>
+            </div>
 
-                <div class="titolo">
-                  Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
-                </div>
-                <div class="sottotilo">
-                  Kyle Dixon & Michael Stein
+            <div class="movie">
+              <div class="movie_container">
+                <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
                 </div>
               </div>
+              <div class="titolo">
+                Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
+              </div>
+              <div class="sottotilo">
+                Kyle Dixon & Michael Stein
+              </div>
+            </div>
           </div>
 
+<!-- THIRD MOVIES WALL -->
           <div class="title">
-          <h1>Hello</h1>
+          <h1>Creato per John Doe </h1>
+          <div class="sottotilo_jo">
+            Piu' ascolti, piu' accurati sarannoi suggerimenti.
+          </div>
           </div>
 
           <div class="row">
+
             <div class="movie">
-
+              <div class="movie_container">
+                <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="titolo">
+                Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
+              </div>
+              <div class="sottotilo">
+                Kyle Dixon & Michael Stein
+              </div>
             </div>
+
             <div class="movie">
-
+              <div class="movie_container">
+                <img class="movies_img" src="./assetts/img/stranger_things.jpg" alt="stranger things">
+                <div class="overlay_img">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="titolo">
+                Stranger things, Vol.1 (a Netflix Original Series Soundtrack)
+              </div>
+              <div class="sottotilo">
+                Kyle Dixon & Michael Stein
+              </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -321,7 +384,7 @@
           <span id="second">4:50</span>
         </div>
       </div>
-    
+
 
 <!-- RIGHT -->
       <div class="controllers_container right">
