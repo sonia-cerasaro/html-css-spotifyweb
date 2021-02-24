@@ -313,7 +313,6 @@ h1 {
 }
 
 
-
 /* FOOTER */
 
 footer {
@@ -479,8 +478,24 @@ footer {
 @media screen and (max-width: 768px) {
 
   .movie {
-    width: calc(100% / 2 - 10px);
+    width: calc(100% / 3 - 10px);
   }
+
+  .big_container_sections {
+    width: calc(100% - 90px);
+    /* padding-top: 80px; */
+    /* overflow-y: auto; */
+    margin-left: 200px;
+  }
+
+  header {
+    width: calc(100vw - 100px);
+  }
+
+  aside.nav_aside{
+    width: 180px;
+  }
+
 
   /* FOOTER */
   /* DISPLAY NONE */
