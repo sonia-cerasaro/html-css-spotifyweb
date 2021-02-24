@@ -253,7 +253,7 @@ div.row {
   text-align: center;
   color: #fff;
   font-weight: bold;
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .sottotilo {
