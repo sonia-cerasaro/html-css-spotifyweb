@@ -63,7 +63,6 @@ div.icons > i {
   font-size: 25px;
   padding-left: 17px;
   margin-top: 15px;
-  margin-bottom: 10px;
 }
 
 #logo {
@@ -90,46 +89,28 @@ span.icone_aside.tua_playlist{
   padding-left: 20px;
 }
 
-.icons.home , .icons.cerca , .icons.nota {
-  border-left: transparent solid 3px;
-  vertical-align: middle;
+.icons.home {
+  border-left: lightgreen solid 2px;
 }
 
-.aside_cont > .icons > i {
-  vertical-align: middle;
+#home {
+  margin-left: 0;
 }
-
-/* GREEN BORDER */
-
 .icons.home:hover {
   color: #fff;
-  border-left: lightgreen solid 3px;
-  cursor: pointer;
 }
 
-<<<<<<< HEAD
-.icons.cerca:hover {
-  color: #fff;
-  border-left: lightgreen solid 3px;
-  cursor: pointer;
-=======
 .aside_cont.home {
   /* height: 20%; */
   color: #fff;
   /* display: flex;
   flex-direction: column; */
->>>>>>> parent of 6ee9845... Aggiunta dettagli (:hover, pointer...)
 }
-
-.icons.nota:hover {
-  color: #fff;
-  border-left: lightgreen solid 3px;
-  cursor: pointer;
-}
-
 
 /* PLAYLIST */
 
+.icons.playlist.crea > span {
+}
 
 .icons.playlist.title > span {
  color: #fff;
@@ -145,16 +126,7 @@ span.icone_aside.tua_playlist{
 
 .icons.playlist.title {
   margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-.icons.playlist.crea:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
-.icons.playlist.crea:hover > #plus {
-  font-size: 35px;
+  margin-bottom: 5px;
 }
 
 
@@ -183,38 +155,17 @@ ul {
   padding-left: 15px;
   color: grey;
   margin-top: 15px;
+  font-weight: bold;
 }
 
 ul li {
-  margin-top: 11px;
+    margin-top: 11px;
 }
-
-ul li:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
-/* BOTTOM ASIDE */
-
-.icons.playlist.jo {
-  margin-bottom: 15px;
-}
-
-.icons.john:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
 
 #arrow > i {
   font-size: 10px;
   padding-left: 20px;
   padding-right: 5px;
-}
-
-.icons.playlist.jo {
-  margin-left: 5px;
-  color: #fff;
 }
 
 span#icona_jo {
