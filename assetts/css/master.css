@@ -24,6 +24,11 @@ header {
   text-align: center;
 }
 
+button#upgrade:hover {
+  border: lightgreen solid 2px;
+  font-weight: bold;
+}
+
 button#upgrade {
   width: 160px;
   height: 30px;
@@ -114,8 +119,8 @@ span.icone_aside.tua_playlist{
   cursor: pointer;
 =======
 .aside_cont.home {
-  /* height: 20%; */
   color: #fff;
+<<<<<<< HEAD
   /* display: flex;
   flex-direction: column; */
 >>>>>>> parent of 6ee9845... Aggiunta dettagli (:hover, pointer...)
@@ -125,6 +130,8 @@ span.icone_aside.tua_playlist{
   color: #fff;
   border-left: lightgreen solid 3px;
   cursor: pointer;
+=======
+>>>>>>> master
 }
 
 
@@ -133,8 +140,6 @@ span.icone_aside.tua_playlist{
 
 .icons.playlist.title > span {
  color: #fff;
-
-
 }
 
 .icons.playlist {
@@ -236,7 +241,6 @@ main {
   height: calc( 100vh - 100px);
   background-color: #1c1c1c;
   display: flex;
-
 }
 
 .big_container_sections {
@@ -269,15 +273,21 @@ div.container_select_options{
   font-size: 10px;
   font-weight: bold;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .lime_line {
-  width: 30px;
-  border: lightgreen solid 2px;
+  width: 50px;
+  border: transparent solid 2px;
   border-radius: 2px;
-  margin-left: 36px;
+  margin-left: 25px;
   margin-top: 2px;
 }
+
+.lista_main:focus , :hover > .lime_line {
+  border: lightgreen solid 2px;
+}
+
 /* SECTION MOVIE LIST */
 
 
@@ -307,7 +317,6 @@ div.row {
 
 .movie_container {
   width: 100%;
-  /* height: 170px; */
   overflow: hidden;
   position: relative;
 }
@@ -332,18 +341,19 @@ h1 {
 }
 
 .movie_container.last:hover {
-  background: #000;
+  background: lightgreen;
   border-radius: 100px;
 }
 
 /* OVERLAY IMG */
 
 .movie_container:hover {
-  background: #000;
+  background: lightgreen;
+  border-radius: 5px;
 }
 
 .movie_container:hover img {
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 .movie_container:hover .overlay_img .fa-play-circle {
